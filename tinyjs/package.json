@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "sap-xsenv": "1.2.4",
+    "sap-xsjs": "1.11.3"
+  },
+  "description": "Tiny World Node.JS Module",
+  "devDependencies": {
+    "sap-xsjs-test": "1.2.2"
+  },
+  "files": [],
+  "main": "server.js",
+  "name": "tinyjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node testrun.js"
+  },
+  "engines": {
+    "node": "6.x"
+  },
+  "version": "1.0.0"
+}

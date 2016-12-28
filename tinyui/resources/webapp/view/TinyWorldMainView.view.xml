@@ -1,0 +1,24 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="tinyworld.tinyui.controller.TinyWorldMainView">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+			<content>
+			    <Table noDataText="Drop column list items here and columns in the area above" id="__table1" items="{path:'tabModel>/euro'}">
+			        <columns>
+			            <Column id="__column3">
+			                <header>
+			                    <Label text="Countries" id="__label3"/>
+			                </header>
+			            </Column></columns>
+			        <items>
+			            <ColumnListItem counter="0" id="__item5">
+			                <cells>
+			                   <Text text="{path:'tabModel>name'}" />
+			                </cells>
+			            </ColumnListItem>
+			        </items></Table>
+			</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
