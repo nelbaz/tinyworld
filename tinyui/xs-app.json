@@ -1,5 +1,11 @@
 {
-  "welcomeFile": "webapp/index.html",
-  "authenticationMethod": "none",
-  "routes": [{"source": "^/euro.xsodata/.*$", "destination": "tinyjs_be"}]
+	"welcomeFile": "webapp/index.html",
+	"authenticationMethod": "none",
+	"routes": [{
+		"source": "^/euro.xsodata/.*$",
+		"destination": "tinyjs_be"
+	}, {
+		"source": "^/country/.*$",
+		"destination": "tinyjs_be"
+	}]
 }

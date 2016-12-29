@@ -13,10 +13,18 @@
 			        <items>
 			            <ColumnListItem counter="0" id="__item5">
 			                <cells>
-			                   <Text text="{path:'tabModel>name'}" />
+			                   <Text text="{path:'tabModel>name'}"/>
 			                </cells>
 			            </ColumnListItem>
-			        </items></Table>
+			        </items>
+			        <infoToolbar>
+			            <Toolbar width="100%" id="__toolbar1">
+			                <content>
+			                    <Button text="Add Country" width="140px" id="__button0" activeIcon="sap-icon://add" press="OpenFirstDialog" icon="sap-icon://add"/>
+			                </content>
+			            </Toolbar>
+			        </infoToolbar></Table>
+			    
 			</content>
 			</Page>
 		</pages>
