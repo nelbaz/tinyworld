@@ -14,6 +14,7 @@ modules:
    type: nodejs
    path: tinyjs
    requires:
+    - name: tiny_uaa
     - name: tinydb
     - name: hdi-container
    provides:
@@ -25,11 +26,13 @@ modules:
    type: html5
    path: tinyui
    requires:
+    - name: tiny_uaa
     - name: tinyjs_api
       group: destinations
       properties:
        name: tinyjs_be
        url: ~{service_url}
+       forwardAuthToken: true
 
 resources:
  - name: hdi-container
@@ -39,3 +42,7 @@ resources:
    properties:
       hdi-container-name: ${service-name}
    type: com.sap.xs.hdi-container
+ - name: tiny_uaa 
+   type: com.sap.xs.uaa
+   parameters:
+     path: ./xs-security.json
